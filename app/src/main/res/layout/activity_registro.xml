@@ -67,7 +67,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="32dp"
             android:ems="10"
-            android:hint="Apellodos"
+            android:hint="Apellidos"
             android:inputType="textPersonName"
             android:textSize="18sp" />
         </LinearLayout>
@@ -76,6 +76,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
         <EditText
+            android:id="@+id/txtCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -102,5 +103,16 @@
             android:inputType="textPassword"
             android:textSize="18sp" />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

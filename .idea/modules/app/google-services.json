@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "907421955894",
+    "firebase_url": "https://masterdent-2e148.firebaseio.com",
+    "project_id": "masterdent-2e148",
+    "storage_bucket": "masterdent-2e148.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907421955894:android:b28cde531208d74dc56597",
+        "android_client_info": {
+          "package_name": "com.example.masterdent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907421955894-gmb6qrte72kd2smdjrqim5d3cpn61qpu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.masterdent",
+            "certificate_hash": "16e131727f3d10ef372384c1439aeca32797a858"
+          }
+        },
+        {
+          "client_id": "907421955894-t1ol5legikprp0itvatigfpc97phnl81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDipHlnYgccqpLMFtRuUPoJxv8b1k8VTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907421955894-t1ol5legikprp0itvatigfpc97phnl81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

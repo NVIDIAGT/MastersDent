@@ -15,11 +15,144 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.masterdent.ui.gallery.GalleryFragment"
         android:label="Inicio"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_citaGratisFragment"
+            app:destination="@id/citaGratisFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.masterdent.ui.slideshow.SlideshowFragment"
         android:label="Nosotros"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/citaEnLineaFragment"
+        android:name="com.example.masterdent.ui.CitaEnLinea.CitaEnLineaFragment"
+        android:label="fragment_cita_en_linea"
+        tools:layout="@layout/fragment_cita_en_linea" >
+        <action
+            android:id="@+id/action_citaEnLineaFragment_to_mensajeDeDisponibilidadFragment"
+            app:destination="@id/mensajeDeDisponibilidadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagoCitaFragment"
+        android:name="com.example.masterdent.ui.CitaEnLinea.PagoCitaFragment"
+        android:label="fragment_pago_cita"
+        tools:layout="@layout/fragment_pago_cita" >
+        <action
+            android:id="@+id/action_pagoCitaFragment_to_detallesDePagoFragment"
+            app:destination="@id/detallesDePagoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleCitaFragment3"
+        android:name="com.example.masterdent.ui.CitaEnLinea.DetalleCitaFragment"
+        android:label="fragment_detalle_cita"
+        tools:layout="@layout/fragment_detalle_cita" >
+        <action
+            android:id="@+id/action_detalleCitaFragment3_to_pagoCitaFragment"
+            app:destination="@id/pagoCitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/citaGratisFragment"
+        android:name="com.example.masterdent.ui.CitaGratis.CitaGratisFragment"
+        android:label="fragment_cita_gratis"
+        tools:layout="@layout/fragment_cita_gratis" >
+        <action
+            android:id="@+id/action_citaGratisFragment_to_mensajeConfirmacionFragment"
+            app:destination="@id/mensajeConfirmacionFragment" />
+        <action
+            android:id="@+id/action_citaGratisFragment_to_mensajeAdvertenciaFragment"
+            app:destination="@id/mensajeAdvertenciaFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/iniciarSesion2"
+        android:name="com.example.masterdent.IniciarSesion"
+        android:label="activity_iniciar_sesion"
+        tools:layout="@layout/activity_iniciar_sesion" />
+    <activity
+        android:id="@+id/registroUsuario2"
+        android:name="com.example.masterdent.RegistroUsuario"
+        android:label="activity_registro_usuario"
+        tools:layout="@layout/activity_registro_usuario" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.masterdent.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <activity
+        android:id="@+id/intro"
+        android:name="com.example.masterdent.Intro"
+        android:label="Intro" />
+    <fragment
+        android:id="@+id/mensajeConfirmacionFragment"
+        android:name="com.example.masterdent.ui.CitaGratis.MensajeConfirmacionFragment"
+        android:label="fragment_mensaje_confirmacion"
+        tools:layout="@layout/fragment_mensaje_confirmacion" />
+    <fragment
+        android:id="@+id/mensajeAdvertenciaFragment"
+        android:name="com.example.masterdent.ui.CitaGratis.MensajeAdvertenciaFragment"
+        android:label="fragment_mensaje_advertencia"
+        tools:layout="@layout/fragment_mensaje_advertencia" >
+        <action
+            android:id="@+id/action_mensajeAdvertenciaFragment_to_citaGratisFragment"
+            app:destination="@id/citaGratisFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/recuperarContrasenna"
+        android:name="com.example.masterdent.RecuperarContrasenna"
+        android:label="activity_recuperar_contrasenna"
+        tools:layout="@layout/activity_recuperar_contrasenna" />
+    <fragment
+        android:id="@+id/mensajeDeDisponibilidadFragment"
+        android:name="com.example.masterdent.ui.CitaEnLinea.MensajeDeDisponibilidadFragment"
+        android:label="fragment_mensaje_de_disponibilidad"
+        tools:layout="@layout/fragment_mensaje_de_disponibilidad" >
+        <action
+            android:id="@+id/action_mensajeDeDisponibilidadFragment_to_detalleCitaFragment3"
+            app:destination="@id/detalleCitaFragment3" />
+        <action
+            android:id="@+id/action_mensajeDeDisponibilidadFragment_to_mensajeErrorFragment"
+            app:destination="@id/mensajeErrorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mensajeErrorFragment"
+        android:name="com.example.masterdent.ui.CitaEnLinea.MensajeErrorFragment"
+        android:label="fragment_mensaje_error"
+        tools:layout="@layout/fragment_mensaje_error" >
+        <action
+            android:id="@+id/action_mensajeErrorFragment_to_citaEnLineaFragment"
+            app:destination="@id/citaEnLineaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallesDePagoFragment"
+        android:name="com.example.masterdent.ui.CitaEnLinea.DetallesDePagoFragment"
+        android:label="fragment_detalles_de_pago"
+        tools:layout="@layout/fragment_detalles_de_pago" >
+        <action
+            android:id="@+id/action_detallesDePagoFragment_to_mensajeSatisfactorioFragment"
+            app:destination="@id/mensajeSatisfactorioFragment" />
+        <action
+            android:id="@+id/action_detallesDePagoFragment_to_mensajePagoNoRealizadoFragment"
+            app:destination="@id/mensajePagoNoRealizadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mensajeSatisfactorioFragment"
+        android:name="com.example.masterdent.ui.CitaEnLinea.MensajeSatisfactorioFragment"
+        android:label="fragment_mensaje_satisfactorio"
+        tools:layout="@layout/fragment_mensaje_satisfactorio" />
+    <fragment
+        android:id="@+id/mensajePagoNoRealizadoFragment"
+        android:name="com.example.masterdent.ui.CitaEnLinea.MensajePagoNoRealizadoFragment"
+        android:label="fragment_mensaje_pago_no_realizado"
+        tools:layout="@layout/fragment_mensaje_pago_no_realizado" >
+        <action
+            android:id="@+id/action_mensajePagoNoRealizadoFragment_to_pagoCitaFragment"
+            app:destination="@id/pagoCitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleTratamientoFragment"
+        android:name="com.example.masterdent.ui.Tratamientos.DetalleTratamientoFragment"
+        android:label="fragment_detalle_tratamiento"
+        tools:layout="@layout/fragment_detalle_tratamiento" />
 </navigation>

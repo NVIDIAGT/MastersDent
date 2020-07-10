@@ -30,6 +30,14 @@ public class IniciarSesion extends AppCompatActivity {
                 startActivity(o);
             }
         });
+        Button RecuperacionContraseña = findViewById(R.id.btnRecuperarContraseña);
+        RecuperacionContraseña.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent o = new Intent(IniciarSesion.this, RecuperarContrasenna.class);
+                startActivity(o);
+            }
+        });
         }
     }
 

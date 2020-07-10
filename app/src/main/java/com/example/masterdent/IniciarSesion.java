@@ -22,6 +22,14 @@ public class IniciarSesion extends AppCompatActivity {
                 startActivity(o);
             }
         });
+        Button EstardentrodelAPP = findViewById(R.id.btnEntrar);
+        EstardentrodelAPP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent o = new Intent(IniciarSesion.this, MainActivity.class);
+                startActivity(o);
+            }
+        });
         }
     }
 

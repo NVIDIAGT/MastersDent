@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class IniciarSesion extends AppCompatActivity {
 
@@ -30,14 +31,17 @@ public class IniciarSesion extends AppCompatActivity {
                 startActivity(o);
             }
         });
-        Button RecuperacionContraseña = findViewById(R.id.btnRecuperarContraseña);
-        RecuperacionContraseña.setOnClickListener(new View.OnClickListener() {
+        //TXT Ir a recueprar contraseña
+        TextView txtRecuperarContraseña = this.findViewById(R.id.txtRecuperarContraseña);
+        txtRecuperarContraseña.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick (View v){
                 Intent o = new Intent(IniciarSesion.this, RecuperarContrasenna.class);
                 startActivity(o);
             }
         });
+        //TXT Ir a recueprar contraseña
         }
     }
 
